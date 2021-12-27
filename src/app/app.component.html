@@ -1,0 +1,22 @@
+<body>
+  <h1 style="text-align: center;">Phone Number Converter</h1>
+<section>
+  <div class="main">
+    <div>
+      <label for="">Country Code</label>
+      <input type="text" name="" id="code" [(ngModel)]="code">
+    </div>
+    <br>
+    <div>
+      <label for="">Phone Number</label>
+      <input type="text" name="" id="" [(ngModel)]="phnumber">
+    </div>
+    <br>
+    <div class="conv" *ngFor="let convertedNumber of phnumber | filter:code">
+      <h2 contentEditable=true data-text="XXXX XXXX">{{convertedNumber}}</h2>
+    </div>
+  </div>
+</section>
+</body>
+
+
